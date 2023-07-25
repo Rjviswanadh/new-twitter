@@ -1,0 +1,88 @@
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "name": "kasi",
+  "username": "srikanth",
+  "password": "sri@143",
+  "gender": "male"
+}
+###
+post http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+get http://localhost:3001/user/tweets/feed/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+###
+get http://localhost:3001/user/following/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+get http://localhost:3001/user/followers/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+
+###
+get http://localhost:3001/tweet/2/
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+get http://localhost:3001/tweet/2/likes/
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+get http://localhost:3001/tweet/2/replies/
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+get http://localhost:3001/user/tweet
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+###
+post http://localhost:3001/user/tweet
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjg2NTAwNzY1fQ.giNHS6MytNlFt3likQmtw7Pk6mKi4zYD8ZaH-dBPGmE
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123",
+  "tweet":"hello world this is chitti i am robot"
+}
+
